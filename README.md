@@ -23,3 +23,42 @@ for fil in range(filas):
 print(A)
 ```
 La unica condicion para que se ejecute correctamente es separar los numeros con 1 espacio (' ') ejemplo: '2 3 5 6' 
+
+### Suma!
+Segun lo visto en el enlace proporcionado el valor con una posicion x,y establecida se sumara con otro con una poscision x,y igual y se agregara
+```python
+suma=[]
+for f in range(filas): 
+    suma.append([0]*columnas) 
+    #^^Se agregara una fila de ceros con la misma cantidad de columnas que la matriz
+    for c in range(columnas):
+        suma[f][c]=A[f][c]+B[f][c] #poscision: f=fila c=columna o de otra manera: lista -> indexacion de la lista
+        #^^se reemplazara la poscision de los ceros con los valores que se suman en esa misma poscision
+```
+Se me complico mas de lo que me gustaria admitir y doy credito a este [Gitbook]([https://material-docente.gitbook.io/parte-practica-informatica-para-ingenieria](https://material-docente.gitbook.io/parte-practica-informatica-para-ingenieria/practica-6.-matrices.-conjuntos/matrices-suma-y-multiplicacion)) el cual empeze a analizar para saber como interpretarlo sin hacer una copia por que si, fue realmente ingenioso el crear una fila de ceros para unicamente reemplazar esos valores especificos sin mas rodeos
+
+**Entradas(Creador de matrices):** 
+
+Matriz 1:
+Valores en la fila:1 2 3
+Valores en la fila:1 3 4
+Valores en la fila:5 6 7
+Valores en la fila:2 3 4 5 <-Caso de error
+Cantidad de valores incorrecta intenta nuevamente <-Salida de error
+Valores en la fila:12 3 4
+[[1.0, 2.0, 3.0], [1.0, 3.0, 4.0], [5.0, 6.0, 7.0], [12.0, 3.0, 4.0]]
+
+Matriz 2:
+Valores en la fila:1 2 3
+Valores en la fila:1 2 3
+Valores en la fila:2 3 4
+Valores en la fila:3 4 5
+[[1.0, 2.0, 3.0], [1.0, 2.0, 3.0], [2.0, 3.0, 4.0], [3.0, 4.0, 5.0]]
+
+**Salida (programa suma):**
+
+[[2.0, 4.0, 6.0], [2.0, 5.0, 7.0], [7.0, 9.0, 11.0], [15.0, 7.0, 9.0]]
+
+
+### Producto
+
