@@ -13,7 +13,7 @@ columnas=int(input("cuantas columnas tiene?: "))
 A=[] #Matriz vacia
 for fil in range(filas):
   while True: #Bucle convencional, para agrenas una n cantidad de filas de la matriz
-    An=list(map(float, input("Valores en la fila:").split(" ")))
+    An=list(map(float, input("Valores en la fila: ").split(" ")))
     #^^Split separara los numeros, map los convertira en flotantes y list los convertira en una lista
     if len(An) == columnas:
       #^^La cantidad de elementos EN la lista debe ser igual al a cantidad de columnas
@@ -40,19 +40,31 @@ Se me complico mas de lo que me gustaria admitir y doy credito a este [Gitbook](
 **Entradas(Creador de matrices):** 
 
 Matriz 1:
-Valores en la fila:1 2 3
-Valores en la fila:1 3 4
-Valores en la fila:5 6 7
-Valores en la fila:2 3 4 5 <-Caso de error
+
+Valores en la fila: 1 2 3 <-Esto es una cadena
+
+Valores en la fila: 1 3 4
+
+Valores en la fila: 5 6 7
+
+Valores en la fila: 2 3 4 5 <-Caso de error
+
 Cantidad de valores incorrecta intenta nuevamente <-Salida de error
+
 Valores en la fila:12 3 4
+
 [[1.0, 2.0, 3.0], [1.0, 3.0, 4.0], [5.0, 6.0, 7.0], [12.0, 3.0, 4.0]]
 
 Matriz 2:
-Valores en la fila:1 2 3
-Valores en la fila:1 2 3
-Valores en la fila:2 3 4
-Valores en la fila:3 4 5
+
+Valores en la fila: 1 2 3
+
+Valores en la fila: 1 2 3
+
+Valores en la fila: 2 3 4
+
+Valores en la fila: 3 4 5
+
 [[1.0, 2.0, 3.0], [1.0, 2.0, 3.0], [2.0, 3.0, 4.0], [3.0, 4.0, 5.0]]
 
 **Salida (programa suma):**
