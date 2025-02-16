@@ -35,7 +35,9 @@ for f in range(filas):
         suma[f][c]=A[f][c]+B[f][c] #poscision: f=fila c=columna o de otra manera: lista -> indexacion de la lista
         #^^se reemplazara la poscision de los ceros con los valores que se suman en esa misma poscision
 ```
-Se me complico mas de lo que me gustaria admitir y doy credito a este [Gitbook]([https://material-docente.gitbook.io/parte-practica-informatica-para-ingenieria](https://material-docente.gitbook.io/parte-practica-informatica-para-ingenieria/practica-6.-matrices.-conjuntos/matrices-suma-y-multiplicacion)) el cual empeze a analizar para saber como interpretarlo sin hacer una copia por que si, fue realmente ingenioso el crear una fila de ceros para unicamente reemplazar esos valores especificos sin mas rodeos
+Se me complico mas de lo que me gustaria admitir y doy credito a el [Gitbook]([https://material-docente.gitbook.io/parte-practica-informatica-para-ingenieria](https://material-docente.gitbook.io/parte-practica-informatica-para-ingenieria/practica-6.-matrices.-conjuntos/matrices-suma-y-multiplicacion)) de practica-informatica-para-ingenieria, el cual empeze a analizar para saber como interpretarlo, fue realmente ingenioso el crear una fila de ceros para unicamente reemplazar esos valores especificos sin mas rodeos
+
+[Gitbook]([https://material-docente.gitbook.io/parte-practica-informatica-para-ingenieria](https://material-docente.gitbook.io/parte-practica-informatica-para-ingenieria/practica-6.-matrices.-conjuntos/matrices-suma-y-multiplicacion))
 
 **Entradas(Creador de matrices):** 
 
